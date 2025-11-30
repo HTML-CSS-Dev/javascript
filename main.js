@@ -147,104 +147,92 @@ if (a2 !== b2) {
 }
 
 console.log('a2 = '+ a2 + ' va ' + 'b2 = ' + b2 )
- 
-// if 12 , if 13 , if 14, if 15
-let m1 = 1;
-let m2 = 4;
-let m3 = 7;
 
-let kichigi = 0;
-let kottasi = 0;
-let ortasi = 0; 
 
+// if 12 , if 13 , if 14
+let nums1 = 12 , nums2 = 4 , nums3 = 1 ;
 
 // if 12
-if (m3 > m1) {
-    kichigi = m1
-} else{}
-
-console.log('eng kichik son = ' + kichigi)
-
-// if 13 
-if (m3 > m2) {
-    ortasi = m2
+if (nums1 > nums3 && nums2 > nums3) {
+    console.log('eng kichkina son bu = ' + nums3)
 }else {}
 
-console.log('ortadagi raqami = ' + ortasi)
 
-// if 14 
-if (m3 > m1) {
-    kichigi = m1;  
-    kattasi = m3;
-} else {
-    ortasi = m2
-}
+// if 13
+if (nums1 > nums2 && nums2 > nums3 ) {
+    console.log('ortancha son bu = ' + nums2)
+} else{}
 
-console.log('kichigi = ' + kichigi + ' va ' + 'kattasi = ' + kattasi)
+
+// if 14
+
+let q = 12;
+let $ = 11;
+let _ = 0;
+
+if (q > $ && $ > _ ) {
+    console.log('birinchi kattasi = '+ q)
+    console.log("keyin kichigi = " + _)
+} else{}
 
 // if 15
 
-let yigindi1 = m2 + m3; 11
-let yigindi2 = m1+m2; 5
-let yigindi3 = m1 + m3; 8
+let $num1 = 12, $num2 = 34 , $num3 = 10;
 
-let katta = 0;
-let ortanchasi = 0;
+let sum1 = $num1 + $num2; // 46
+let sum2 = $num1 + $num3; // 22
+let sum3 = $num2 + $num3; // 44
 
-if (yigindi1 > yigindi3 > yigindi2) {
-    katta = yigindi1;
-    ortanchasi = yigindi3;
-console.log('katta yigindi = ' + katta + ' va ' + 'orta yigindi = ' + ortanchasi)
+if (sum1 > sum2 && sum3 > sum2) {
+    console.log("eng katta ikta qoshuvchilar: " + sum1 + " va " + sum3)
+} else {}
+
+
+// if 16
+let _num1 = 23, _num2 = 24 , _num3 = 25;
+if (_num1 < _num2 && _num2 < _num3) {
+    console.log("_num1 = " + _num1**2 + "_num2 = " + _num2**2 + "_num3 = " + _num3**2)
+} else {
+    console.log("_num1 = " + _num1 * (-1) + "_num2 = " + _num2* (-1)  + "_num3 = " + _num3 * (-1))
 }
 
+// if 17
+let _nam1 = 13, _nam2 = 17 , _nam3 = 10;
 
-// if 18 
+if (_nam1 < _nam2 && _nam2 < _nam3 || _nam1 > _nam2 && _nam2 > _nam3) {
+    console.log("_nam1 = " + _nam1**2 + "_nam2 = " + _nam2**2 + "_nam3 = " + _nam3**2)
+} else {
+    console.log("_nam1 = " + _nam1 * (-1) + "_nam2 = " + _nam2* (-1)  + "_nam3 = " + _nam3 * (-1))
+}
 
-let num1 = 12;
-let num2 = num1;
-let num3 = 0;
+//  if 18
 
-tartib_raqam = 0;
+let raq1 = 12 , raq2 = 13, raq3;
+raq3 = raq1;
+let tartib_raqam = 0;
+if (raq2 > raq1 || raq2 > raq3) {
+    tartib_raqam += 2;
+    console.log('raq2 tarttib raqami = ' + tartib_raqam)
+}
 
-if (num1 !== num3) {
-    tartib_raqam=num3 + 3;
-} else {}
+// if 19
 
-console.log('qolganing tartibini raqami ' + tartib_raqam)
-
-// if 19 
-
-let numbers1 = 11;
-let numbers2 = 10;
-let numbers3 = numbers1;
-let numbers4 = numbers1;
-
-let raqam = 0;
-
-if (numbers1 !== numbers2 ) {
-    numbers2 = raqam + 2
-    console.log('numbers2 ning tartib raqami = ' + numbers2 )
-} else {}
-
-// if 20
-let ac = 12; 
-let bc = 8;
-let ab;
-
-let eng_yaqini;
-if (ac > bc) {
-    ab = ac - bc;
-} else {}
-
-if (bc > ab ) {
-    eng_yaqini = 'B nuqta'; 
+let raqam1 = 12 , raqam2, raqam3, raqam4 = 1;
+raqam2 = raqam1;
+raqam3 = raqam1;
+let ochered = 0;
+if (raqam4 < raqam2 && raqam4 < raqam3 && raqam4 < raqam1) {
+    ochered += 4;
+    console.log('raqam4 = ' + ochered)
 }else {}
 
-console.log('eng yaqini ' + eng_yaqini + ' va a dan bolgan masofasi ' + ab )
+// if 20
 
+let A = -2 , B = 1 , C = 3;
 
-let n1 = 1;
+let AB = -1*(-2 -1) // 3 - orasidagi masofa 
+let BC = -(1 - 3) //2 - orasidagi masifa 
 
-let sam1 = n1;
-let sam2 =n1 + 1;
-let sam3 = n1 + 2;
+if ( BC < AB ) {
+    console.log('A ga eng yaqin masofa C ba ularning orasidagi masofa =' + BC )
+} else {}
