@@ -1,3 +1,3 @@
-@echo off 
-node main.js
+@echo off
+node array.js
 pause
