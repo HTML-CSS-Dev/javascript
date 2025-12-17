@@ -489,7 +489,92 @@ for (let i = 1; i <= a; i++) {
 
 }
 
-console.log(ekub(12,6,18))
+console.log(ekub(12,18,24))
 
-// 6 savol:
-console.log(' 6 si savol: ')
+
+
+// Param 1
+console.log('Param 1:')
+
+function min( a , b , c , n) {
+
+let k1 = a;
+let k2 = b;
+let k3 = c;
+
+for ( let i = 0; i < n; i++ ) {
+    k1.push(a[i])
+}
+
+console.log('a(min) = ' + Math.min(...k1))
+
+for ( let i = 0; i < n; i++ ) {
+    k2.push(b[i])
+}
+
+console.log( 'b(min) = ' + Math.min(...k2))
+
+for ( let i = 0; i < n; i++ ) {
+    k3.push(c[i])
+}
+
+return 'c(min) = ' + Math.min(...k3)
+}
+
+
+console.log(min([2 , 6, 8 , 9] , [ 9 , 11, 2 ,5] , [11,2, 10 , 0] , 4 ))
+
+
+//  Param 2
+console.log('Param 2:')
+function max( a , b , c , n) {
+
+let k1 = a;
+let k2 = b;
+let k3 = c;
+
+for ( let i = 0; i < n; i++ ) {
+    k1.push(a[i])
+}
+
+console.log('a(max) = ' + Math.max(...k1))
+
+for ( let i = 0; i < n; i++ ) {
+    k2.push(b[i])
+}
+
+console.log( 'b(max) = ' + Math.max(...k2))
+
+for ( let i = 0; i < n; i++ ) {
+    k3.push(c[i])
+}
+
+return 'c(max) = ' + Math.max(...k3)
+}
+
+
+console.log(max([2 , 6, 8 , 9] , [ 9 , 11, 2 ,5] , [11,2, 10 , 0] , 4 ))
+
+
+
+// Param 3
+console.log('Param3')
+
+let minMax = (t,y,u) => {
+
+let sum1 = t
+let sum2 = y
+let sum3 = u
+
+console.log(sum1.indexOf(Math.min(...sum1)))
+console.log(sum1.indexOf(Math.max(...sum1)))
+
+console.log(sum2.indexOf(Math.min(...sum2)))
+console.log(sum2.indexOf(Math.max(...sum2)))
+
+console.log(sum3.indexOf(Math.min(...sum3)))
+return sum3.indexOf(Math.max(...sum3))
+
+}
+
+console.log( minMax([12 , 2, 4],[11, 0 ,10], [9 , 0, 1]))
