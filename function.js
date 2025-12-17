@@ -190,3 +190,306 @@ if ( daromad < 10 ) {
 }
 
 console.log(soliq_hisoblovchi(100))
+
+// Qudrat akani kitobi
+
+// 1
+console.log('qudrata aka № 1:')
+let ishora = (a) => {
+    if ( a > 0 ) {
+    return 1
+    } else if( a <0 ) {
+    reurn -1
+    } else {
+    return o
+    }
+}
+
+console.log(ishora(10))
+
+// 2
+console.log('qudrata aka № 2:')
+
+let diskriminant = (a,b,c) => {
+
+let d = b**2 - 4*a*c;
+
+if ( d > 0 ) {
+    return '2 ta yechim'
+} else if( d = 0 ) {
+    return '1 ta yechim'
+} else {
+    return 'yechim yoq'
+}
+}
+
+console.log(diskriminant(1,4,2))
+
+// 3 
+console.log('qudrata aka № 3:')
+// S = PI*r**2
+const doira = (r1 , r2, r3) => {
+    const pi = 3.14;
+    S1 =  pi * r1**2;
+    S2 =  pi * r2**2;
+    S3 =  pi * r3**2;
+    return '1 doira yuzi = ' + S1 + ',' +'2 doira yuzi = ' + S2 + ',' + '3 doira yuzi = ' + S3
+}
+
+console.log(doira(3,1,4))
+
+
+// 4
+console.log('qudrata aka № 4:')
+
+const daraja = (son) => {
+let n1 = son;
+let k;
+let i= 1; 
+while ( i <= n1 ) {
+k = 2 ** i;
+    i++
+}
+
+return '2 ning n darajasi = ' + k
+}
+
+console.log(daraja(5))
+
+
+// 5
+console.log('qudrata aka № 5:')
+
+let number1 = 12;
+let count1 = 0 , count2 = 0, count3 = 0; 
+let number2 = 18;
+
+
+for ( let i = 1; i <=number1; i++) {
+    if ( number1 % i === 0 ) {
+        count1++;
+    }
+}
+
+console.log(count1) // 6 ta
+
+for ( let i = 1; i <= number2; i++) {
+    if ( number2 % i === 0 ) {
+        count2++;
+    }
+}
+
+console.log(count2) // 6 ta
+
+if ( count1 === count2) {
+console.log('ekub(number1 , number 2) = ' + count1 )
+} else {
+    console.log('ekub sonlari ozaro teng emas')
+}
+
+//  7
+
+console.log('qudrata aka № 7:')
+
+const darajas = (son1 , son2) => {
+let n1 = son1;
+let n2 = son2;
+let k;
+let i = 0; 
+while ( i <= son2 ) {
+k = n1 ** i;
+    i++
+}
+
+return '2 ning n darajasi = ' + k
+}
+
+console.log(darajas(2 , 4))
+
+
+
+// 5
+
+console.log(' 5 si savol: ')
+
+let ekub = ( a , b , c ) => {
+    if( b > a && a > c ) {
+  let count1 , count2 , count3;
+  // c
+  for (let i = 1; i <= c; i++) {
+    if (c % i === 0) {
+      count1 = i
+    }
+  }
+
+  for (let i = 1; i <= c; i++) {
+    if (a % i === 0) {
+      count2 = i
+    }
+  }
+  
+
+for (let i = 1; i <= c; i++) {
+    if (b % i === 0) {
+      count3 = i
+    }
+  }
+    
+  if ( count1 === count2 && count2 === count3 ) {
+    return 'ekub(a , b , c) = ' + count1
+  } else {
+    return  'bu sonlarning ekubi mavjud emas'
+  }
+
+}  else if( a > b && b > c  ) {
+      let count1 , count2 , count3;
+  // c
+  for (let i = 1; i <= c; i++) {
+    if (c % i === 0) {
+      count1 = i
+    }
+  }
+
+  for (let i = 1; i <= c; i++) {
+    if (a % i === 0) {
+      count2 = i
+    }
+  }
+  
+
+for (let i = 1; i <= c; i++) {
+    if (b % i === 0) {
+      count3 = i
+    }
+  }
+    
+
+  if ( count1 === count2 && count2 === count3 ) {
+    return 'ekub(a , b , c) = ' + count1
+} else {
+    return  'bu sonlarning ekubi mavjud emas'
+}
+}  else if (a > c && c > b) {
+
+let count1 , count2 , count3;
+  // c
+  for (let i = 1; i <= b; i++) {
+    if (c % i === 0) {
+      count1 = i
+    }
+  }
+
+  for (let i = 1; i <= b; i++) {
+    if (a % i === 0) {
+      count2 = i
+    }
+  }
+  
+
+for (let i = 1; i <= b; i++) {
+    if (b % i === 0) {
+      count3 = i
+    }
+  }
+    
+  
+  if ( count1 === count2 && count2 === count3 ) {
+    return 'ekub(a , b , c) = ' + count1 
+  } else {
+    return 'bu sonlarning ekubi mavjud emas'
+  }
+
+
+}  else if ( c > a && a > b) {
+
+let count1 , count2 , count3;
+  // c
+  for (let i = 1; i <= b; i++) {
+    if (c % i === 0) {
+      count1 = i
+    }
+  }
+
+  for (let i = 1; i <= b; i++) {
+    if (a % i === 0) {
+      count2 = i
+    }
+  }
+  
+for (let i = 1; i <= b; i++) {
+    if (b % i === 0) {
+      count3 = i
+    }
+  }
+  
+  
+  if ( count1 === count2 && count2 === count3 ) {
+    return 'ekub(a , b , c) = ' + count1 
+  } else {
+    return 'bu sonlarning ekubi mavjud emas'
+  }
+
+} else if(b > c && c > a )  {
+
+    let count1 , count2 , count3;
+  // c
+  for (let i = 1; i <= a; i++) {
+    if (c % i === 0) {
+      count1 = i
+    }
+  }
+
+  for (let i = 1; i <= a; i++) {
+    if (a % i === 0) {
+      count2 = i
+    }
+  }
+  
+for (let i = 1; i <= a; i++) {
+    if (b % i === 0) {
+      count3 = i
+    }
+  }
+  
+  
+  if ( count1 === count2 && count2 === count3 ) {
+    return 'ekub(a , b , c) = ' + count1
+  } else {
+    return 'bu sonlarning ekubi mavjud emas'
+  }
+} else if ( c > b && b > a ) {
+        let count1 , count2 , count3;
+  // c
+  for (let i = 1; i <= a; i++) {
+    if (c % i === 0) {
+      count1 = i
+    }
+  }
+
+  for (let i = 1; i <= a; i++) {
+    if (a % i === 0) {
+      count2 = i
+    }
+  }
+  
+
+for (let i = 1; i <= a; i++) {
+    if (b % i === 0) {
+      count3 = i
+    }
+  }
+  
+  
+  if ( count1 === count2 && count2 === count3 ) {
+    return  'ekub(a , b , c) = ' + count1
+  } else {
+    return 'bu sonlarning ekubi mavjud emas'
+  }
+}
+
+}
+
+console.log(ekub(12,6,18))
+
+// 6 savol:
+console.log(' 6 si savol: ')
