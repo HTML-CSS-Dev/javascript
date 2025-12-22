@@ -87,4 +87,72 @@ console.log(copy.flat().shift() + copy.flat().pop())
 console.log(original)
 
 
-// 5
+// 5.1 1-masala: forEach ()
+
+const narxlar = [100, 200 , 300]
+
+function massiv(index) {
+  console.log(index - (index*10)/100)
+}
+
+console.log(narxlar.forEach(massiv))
+
+
+// 5.2 2-masala:
+
+const ismlar = [" Ali ", "Vali "  , " harf "]
+
+function uzunlik(items) {
+  console.log(items + items.length + ' harf')
+}
+
+console.log(ismlar.forEach(uzunlik))
+
+// 5.3 3 masala 
+
+const raqamlar = [ 1, 8 ,5 , 6 ,7, 6 ]
+
+let x = 0
+function juftSonlar( items ) {
+
+  if ( items % 2 === 0 ) {
+     x = x+items;
+  }
+}
+
+console.log(raqamlar.forEach(juftSonlar))
+console.log(x)
+
+
+// 6 map
+
+// 6.1
+const selsiy = [38 , 23 , 13 , -11]
+
+let man = `F = ${selsiy.map(elements => parseInt(elements * 1.8 + 32) )}`
+console.log(man.trimStart())
+
+// 6.2
+
+const obj = [{name:'Ali', age:20} , {name:'Vali' , age: 25}]
+
+function object(index) {
+    return index.name
+}
+
+console.log(obj.map(object))
+
+// 6.3
+
+const raq = [ 1 , 4, -1 , -4 , -5]
+
+function phonk(items) {
+    if (items < 0 ) {
+        items*=(-1) 
+    }
+
+    return items
+}
+
+console.log(raq.map(phonk))
+
