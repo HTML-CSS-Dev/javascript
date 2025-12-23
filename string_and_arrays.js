@@ -146,4 +146,35 @@ for ( let i = 0; i < arr9.length; i++ ) {
 }
 
 
-// 
+//  Murakkab
+
+// 1
+
+var str = 'madam';
+
+if ( str.split('').reverse().join('') === str ) {
+    console.log(true)
+} else {
+    console.log(false)
+}
+
+
+// 3
+
+var str = "apple banana apple orange banana";
+console.log(str.slice(0,12) + ' ' + str.slice(-13,-6))
+
+// 4
+
+const arr10 = [ 1, [2,3] , [4, [5,6]] ]
+console.log(arr10.flat().flat())
+
+// 5
+var str = "hello world from javascript";
+var str1 = str.slice(0,5).replace('hello'," Hello ")
+var str2 = str.slice(6,11).replace('world'," World ")
+var str4 = str.slice(11,16).replace('from'," From ")
+var str5 = str.slice(17,27).replace('javascript',"Javascript")
+console.log(str1 + str2 + str4 + str5)
+
+
