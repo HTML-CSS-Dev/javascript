@@ -101,35 +101,42 @@ var str1 = '123-456-789'
 console.log(str1.replaceAll('-','\t'))
 
 // 11
-
 const arr6 = [1 , 5, 3, 9 , 2]
 console.log(Math.max(...arr6))
 
-// 12
+// 13
+const arr9 = [2 , 4, 6]
 
-const arr7 = ['orange', 'apple' , 'banana']
-console.log(arr7.toSorted())
+function newMethod(index) {
+    if (index % 2 === 1 ) {
+    console.log(false)
+    } else {
+    console.log(true)
+    }
+}
+
+console.log(arr9.every(newMethod))
 
 // 14
-
 var str1 = "javascript"
 console.log(str1.split("").reverse().join(""))
 
 // 15
 
 const arr8 = [1 , 2 , 3, 4]
-let man;
-const newArr = []
 
-arr8.map((index) => {man = index + 2;newArr.push(man)})
-console.log(newArr)
+function man(index) {
+    return index+2
+}
+
+console.log(arr8.map(man))
 
 
 // 13
-const arr9 = [2 , 4, 6]
+const arr = [2 , 4, 6]
 
 for ( let i = 0; i < arr9.length; i++ ) {
-    if ( arr9[i] % 2 === 1 ) {
+    if ( arr[i] % 2 === 1 ) {
     console.log(false)
     break;
     } else {
@@ -165,12 +172,7 @@ console.log(arr10.flat().flat())
 
 //5
 
-var str = "hello world from javascript";
+var most = 'hello world from javascript'
+var arr1 = most.split(' ')
 
-var str1 = str.slice(0,5).replace(str[0],str[0].toUpperCase())
-var str2 = str.slice(6,11).replace(str[6],' ' +str[6].toUpperCase())
-var str4 = str.slice(11,16).replace(str[11], ' ' + str[11].toUpperCase())
-var str5 = str.slice(17,27).replace(str[17], ' ' + str[17].toUpperCase())
-console.log(str1 + str2 + str4 + str5)
-
-
+console.log(arr1.reduce((sum , index) => {return sum.replace(sum[0], ' ' + sum[0].toUpperCase()) + (index.replace(index[0], ' ' + index[0].toUpperCase()))} ))
