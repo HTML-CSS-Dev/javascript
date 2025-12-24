@@ -158,20 +158,29 @@ if ( str.split('').reverse().join('') === str ) {
     console.log(false)
 }
 
+//2 
+
+const points = [40, 100, 1, 5, 25, 10];
+
+function math() {
+    return 0.5 - Math.random()    
+}
+
+console.log(points.sort(math).slice(0,3))
+
 
 // 3
 
 var str = "apple banana apple orange banana";
-console.log(str.slice(0,12) + ' ' + str.slice(-13,-6))
+var umumiy = str.slice(0,12) + ' ' + str.slice(-13,-6)
+console.log(umumiy.split(' '))
 
 // 4
-
 const arr10 = [ 1, [2,3] , [4, [5,6]] ]
 console.log(arr10.flat().flat())
 
 
-//5
-
+// 5
 var most = 'hello world from javascript'
 var arr1 = most.split(' ')
 
