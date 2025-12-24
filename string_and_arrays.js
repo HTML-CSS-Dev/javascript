@@ -72,13 +72,9 @@ console.log(arr1.includes(3))
 var arr2 = 'JavaScript'
 console.log(arr2.substring(0,4))
 
-// 5
-const massivlar = [1 ,2 ,3 , 4 , 5 , 6]
-
-const mass = []
-
-massivlar.forEach((elements) => {if ( elements % 2 === 0 ) {mass.push(elements)}})
-console.log(mass)
+5
+const massivlars = [1 ,2 ,3 , 4 , 5 , 6]
+console.log(massivlars.filter((index) =>{if ( index % 2 === 0 ) {return index}}))
 
 // 6
 
@@ -97,15 +93,12 @@ console.log(arr4.slice(1,3))
 
 // 9
 const arr5 = [5, 10 , 15]
-var summa = 0
-
-arr5.map(item => summa += item)
-console.log(summa)
+console.log(arr5.reduce((summa,value) => {return summa + value}))
 
 // 10
 
 var str1 = '123-456-789'
-console.log(str1.replace(/-/g,'\t'))
+console.log(str1.replaceAll('-','\t'))
 
 // 11
 
@@ -169,12 +162,15 @@ console.log(str.slice(0,12) + ' ' + str.slice(-13,-6))
 const arr10 = [ 1, [2,3] , [4, [5,6]] ]
 console.log(arr10.flat().flat())
 
-// 5
+
+//5
+
 var str = "hello world from javascript";
-var str1 = str.slice(0,5).replace('hello'," Hello ")
-var str2 = str.slice(6,11).replace('world'," World ")
-var str4 = str.slice(11,16).replace('from'," From ")
-var str5 = str.slice(17,27).replace('javascript',"Javascript")
+
+var str1 = str.slice(0,5).replace(str[0],str[0].toUpperCase())
+var str2 = str.slice(6,11).replace(str[6],' ' +str[6].toUpperCase())
+var str4 = str.slice(11,16).replace(str[11], ' ' + str[11].toUpperCase())
+var str5 = str.slice(17,27).replace(str[17], ' ' + str[17].toUpperCase())
 console.log(str1 + str2 + str4 + str5)
 
 
